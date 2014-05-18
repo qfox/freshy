@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
+  <body class="options">
+    <h1 class="options__title">Freshy</h1>
+
+    <section class="options-box">
+      <label class="options-box__title">
+        <span class="checkbox__caption">Common</span>
+      </label>
+      <fieldset class="fieldset">
+        <div class="fieldset__field field">
+          <span class="field__title">Method:</span>
+          <label class="radio" title="Via randomizing param in link tags hrefs">
+            <input class="radio__input conf" name="method" value="css" type="radio" checked />
+            <span class="radio__caption">CSS</span>
+          </label>
+          <label class="radio" title="Via background page reload and replace link tags with new ones">
+            <input class="radio__input conf" name="method" value="cssforced" type="radio" />
+            <span class="radio__caption">Forced CSS</span>
+          </label>
+          <label class="radio" title="Full page reloading mode">
+            <input class="radio__input conf" name="method" value="reload" type="radio" />
+            <span class="radio__caption">Full reload</span>
+          </label>
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="options-box">
+      <label class="options-box__title checkbox">
+        <input class="checkbox__input toggler conf" data-toggle="timer-data" name="timerSwitcher" type="checkbox" />
+        <span class="checkbox__caption">Timer</span>
+      </label>
+      <fieldset class="fieldset timer-data">
+        <div class="fieldset__field field">
+          <span class="">
+            <label for="timerTimeout" class="field__title">Timeout: </label>
+            <input class="field__value conf" data-type="interval" name="timerTimeout" type="text" value="10s" />
+          </span>
+          <input class="range-value" data-for="timerTimeout" type="range" min="0" max="30" value="8" />
+        </div>
+      </fieldset>
+    </section>
+
+    <!--
+    <section class="options-box">
+      <label class="options-box__title checkbox checkbox_disabled_yes">
+        <input class="checkbox__input toggler conf" disabled data-toggle="udp-data" name="udpSwitcher" type="checkbox" />
+        <span class="checkbox__caption">UDP refresh</span>
+      </label>
+      <fieldset class="fieldset udp-data">
+        <label for="udpPort">UDP port: </label>
+        <input class="conf" name="udpPort" type="number" min="1000" max="65535" value="53221" />
+      </fieldset>
+    </section>
+    -->
+
+    <section class="options-box">
+      <div style="float:right;padding:5px 0;">
+        <button class="button refresh-trigger">Refreshy</button>
+      </div>
+    </section>
+  </body>
+</html>

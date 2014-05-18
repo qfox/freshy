@@ -1,0 +1,51 @@
+{
+  "manifest_version"       : 2,
+  "minimum_chrome_version" : "26",
+  "name"                   : "__MSG_appName__",
+  "short_name"             : "Freshy",
+  "description"            : "__MSG_appDescription__",
+  "version" : "0.1",
+
+  "homepage_url"           : "https://github.com/zxqfox/freshy",
+
+  "default_locale"         : "en",
+  "icons": {
+    "16": "images/main_icon/small.png",
+    "48": "images/main_icon/medium.png",
+    "128": "images/main_icon/large.png"
+  },
+
+  "background"             : {
+    "scripts"    : ["lib/config.js", "lib/tools.js", "lib/tabs.js", "lib/background.js"],
+    "persistent" : true
+  },
+
+  "incognito"              : "split",
+  "offline_enabled"        : true,
+  "permissions"            : [
+    "<all_urls>",
+    "tabs",
+    "storage"
+  ],
+  "browser_action"         : {
+    "default_icon"  : {
+      "19" : "images/popup_icon/default.png",
+      "38" : "images/popup_icon/default@2x.png"
+    },
+    "default_title" : "__MSG_pageActionTitle__",
+    "default_popup" : "lib/popup/popup.html"
+  },
+
+  "content_scripts"        : [
+    { "js" : ["lib/freshy.js"], "matches" : ["<all_urls>"] }
+  ],
+  "commands"               : {
+    "_execute_page_action" : {
+      "suggested_key" : {
+        "default" : "Ctrl+E",
+        "mac"     : "Command+E"
+      },
+      "description"   : "__MSG_appName__"
+    }
+  }
+}

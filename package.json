@@ -1,0 +1,22 @@
+{
+    "name": "Freshy",
+    "version": "0.1",
+    "description": "Freshy (Advanced Refresher) — Chrome extension",
+    "main": "''",
+    "directories": {
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/zxqfox/freshy.git"
+    },
+    "author": {
+        "name": "Alexej Yaroshevich",
+        "email": "zxqfox@gmail.com"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "bugs": {
+        "url": "https://github.com/zxqfox/freshy/issues"
+    }
+}

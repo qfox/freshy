@@ -1,0 +1,13 @@
+{
+  "appName": {
+    "message": "Freshy",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Freshy (Advanced Refresher)",
+    "description": "The description of the application"
+  },
+  "pageActionTitle" : {
+    "message" : "Freshy"
+  }
+}

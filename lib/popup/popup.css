@@ -1,0 +1,58 @@
+.options {
+  width:300px;
+  font: 14px Calibri, Tahoma, Helvetica, sans-serif;
+}
+.options__title {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+.fieldset {
+  border:0;
+  padding: 6px 13px;
+  margin: 0 -8px;
+  box-sizing: content-box;
+  position: relative;
+}
+.fieldset:nth-child(2n) {
+  background: #f7f7f7;
+}
+.options-box {
+  margin: 0 0 10px;
+}
+.options-box__title {
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.checkbox {
+  margin:0;
+  font-weight: normal;
+}
+.checkbox__input {
+  margin:0;
+}
+.checkbox_disabled_yes .checkbox__caption {
+  color:#aaa;
+}
+
+.radio {
+  padding: 0 2px;
+}
+.radio__input {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.field__title {
+  display:inline-block;
+  width: 20%;
+}
+.fieldset__field {
+  margin: 2px 0;
+  padding: 2px 0;
+}
+
+.range-value {
+  width: 100%;
+}
